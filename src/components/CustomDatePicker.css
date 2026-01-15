@@ -1,0 +1,69 @@
+.cycle-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: #fff;
+  padding: 10px 12px;
+}
+
+/* setas */
+.cycle-arrow {
+  background: transparent;
+  border: none;
+  color: #7A52E1;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 2px 6px;
+  line-height: 1;
+}
+
+/* trigger visual */
+.cycle-trigger {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.cycle-prefix {
+  font-weight: 800;
+  font-size: 14px;
+  color: #2b303b;
+}
+
+.cycle-text {
+  font-weight: 800;
+  font-size: 14px;
+  color: #7A52E1;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/*
+  RangePicker fica por cima, mas SEM overlay hack:
+  ele é o trigger real, só fica invisível.
+*/
+.cycle-picker {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+/* garante área clicável */
+.cycle-picker .ant-picker {
+  width: 100%;
+  height: 100%;
+}
+
+/* botão Aplicar roxo */
+.ant-picker-ok button {
+  background: #7A52E1;
+  border-color: #7A52E1;
+}
+.ant-picker-ok button:hover {
+  background: #5B3DAD;
+  border-color: #5B3DAD;
+}
